@@ -9,11 +9,23 @@
 <body>
     <h1>Guia Perguntas e Respostas</h1>
     <hr>
+    <h3>Passando Variáveis</h3>
     <p>Meu nome é <%= nome %> </p> 
     <p> Vamos trabalhar na linguagem <%= lang %></p>
     <p> Inscritos: <%= inscritos %> </p>
-    <p> Inscritos: <%= nome %> </p>
 
+    <hr>
+    <h3>Condicionais</h3>
+
+    <% if(msg == true ) { %>
+        <h3>Ocorreu um Erro!</h3>
+   
+
+    <%} else { %>
+
+        <h3>Nenhum Erro</h3>
+
+    <%}%>
     
 </body>
 </html>

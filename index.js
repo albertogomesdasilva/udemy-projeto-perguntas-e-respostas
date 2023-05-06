@@ -7,7 +7,12 @@ app.set('view engine', 'ejs')
 
 app.get("/",(req, res) => {
     // res.send("Bem Vindo ao meu site")
-    res.render("index")
+    res.render("index", {
+        nome: "Alberto",
+        lang: "NodeJS",
+        empresa: "Guia do Programador",
+        inscritos: 8000
+    })
 })
 app.get("/home",(req, res) => {
     // res.send("Bem Vindo ao meu site")
